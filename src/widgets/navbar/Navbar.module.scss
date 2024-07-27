@@ -1,0 +1,30 @@
+nav {
+  transition: all 400ms;
+  z-index: 1;
+}
+
+.dark {
+  background-color: var(--dark);
+}
+
+.light {
+  background-color: var(--white);
+}
+
+.active {
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+}
+
+li {
+  transition: var(--transition);
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: var(--transition);
+  }
+}
+
+.link:hover {
+  color: unset;
+}
